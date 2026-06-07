@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Akshaya 🌹</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Particle canvas -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- Background Music: mp.mpeg -->
+<audio id="music" loop>
+  <source src="mp.mpeg" type="audio/mpeg">
+</audio>
+<button id="musicBtn" title="Toggle Music">♪</button>
+
+<!-- ═══════════════════════════ WELCOME ═══════════════════════════ -->
+<section id="welcome">
+  <div class="welcome-glow"></div>
+
+  <div class="petal-ring">🌹</div>
+  <p class="welcome-eyebrow">A Love Letter in Pixels</p>
+  <h1>Happy Birthday<br><em>Akshaya</em></h1>
+  <p class="welcome-sub">Something beautiful is waiting for you&nbsp;✦</p>
+  <button class="open-btn" id="openBtn">Open Your Surprise</button>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ MAIN ═══════════════════════════ -->
+<div id="main-content">
+
+  <!-- GALLERY -->
+  <section id="gallery-section">
+    <p class="section-label reveal">Our Story</p>
+    <h2 class="section-title reveal reveal-delay-1">
+      <em>Memories</em> written<br>in <strong>light & love</strong>
+    </h2>
+    <p style="text-align:center;color:var(--text-muted);font-size:0.82rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:48px;" class="reveal reveal-delay-2">✦ Click to reveal each moment ✦</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="img.jpeg" alt="Memory 1">
+        <div class="card-overlay"></div>
+        <div class="reveal-hint">
+          <span class="reveal-hint-icon">🌹</span>
+          <span class="reveal-hint-text">Click to reveal</span>
+        </div>
+        <div class="card-caption"><p>The beginning of everything ✨</p></div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="img2.jpeg" alt="Memory 2">
+        <div class="card-overlay"></div>
+        <div class="reveal-hint">
+          <span class="reveal-hint-icon">🌸</span>
+          <span class="reveal-hint-text">Click to reveal</span>
+        </div>
+        <div class="card-caption"><p>Where magic lives 💫</p></div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="img3.jpeg" alt="Memory 3">
+        <div class="card-overlay"></div>
+        <div class="reveal-hint">
+          <span class="reveal-hint-icon">💮</span>
+          <span class="reveal-hint-text">Click to reveal</span>
+        </div>
+        <div class="card-caption"><p>A smile I live for 🌙</p></div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="img4.jpeg" alt="Memory 4">
+        <div class="card-overlay"></div>
+        <div class="reveal-hint">
+          <span class="reveal-hint-icon">🌹</span>
+          <span class="reveal-hint-text">Click to reveal</span>
+        </div>
+        <div class="card-caption"><p>Forever in my heart 💖</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament-divider reveal">✦ &nbsp; 🌹 &nbsp; ✦ &nbsp; 🌹 &nbsp; ✦</div>
+
+  <!-- LETTER -->
+  <section id="letter-section">
+    <div class="letter-wrapper">
+      <div class="letter-card reveal">
+        <p class="letter-tag">💌 &nbsp; A Letter From the Heart</p>
+        <h2 class="letter-heading">Happy Birthday, Akshaya!!!!</h2>
+        <p class="letter-sub">🎀 &nbsp; You're turning 19 &nbsp; 🎀</p>
+        <div class="letter-line"></div>
+
+        <div class="letter-body">Akshu is gonna be 19 this year yayayayayaya 🎉
+
+<em style="color:var(--gold-light);font-size:1.2rem;display:block;text-align:center;margin:16px 0;">"Right Place, Right Person"</em>
+
+Who knew that a simple message sent because of a college event would one day become the beginning of my favorite story. A story brighter than the stars, pretty like the moon, and forever to be there like the Sun.
+
+Stars? Who are the stars in my life? Your eyes — your eyes are the stars... who guide me through college, my eyes look up to these stars to survive.
+
+Moon? Where is this moon? Is this moon in the corridor or is it in my class? How do I keep finding it everywhere? Is it because it is you? ✨
+
+Sun? I have seen you getting angry, frustrated and taking stress like the sun takes for its earth-lings — so let me be the breeze in your life, keeping you calm and cool wherever you go ☀️
+
+I hope our ship sails because you are the lighthouse in my life, steadying my rocky boat with the beam of lights filled with hope 🛶
+
+You bring joy to my life, the way kids feel after hearing the ice-cream man's bell ring 🍧
+
+You have rung the bells of my heart, like someone rings the bell of a temple — filled with prayers, hopes and happiness, full of life 🔔
+
+Please don't hang me like we hang our clothes. Fold me up neatly, fill me with love, and make sure to gently place me in the cupboard of your memories ✨</div>
+
+        <!-- Song Notification Modal -->
+        <div id="songNotification" class="song-notification" style="display:none;">
+          <div class="notification-content">
+            <span class="notification-close" onclick="closeSongNotification()">&times;</span>
+            <p>💕 <em>I think this is a LOVE SONG</em> 💕</p>
+            <p style="font-size:0.9rem; margin-top:12px; opacity:0.9;">so you can listen to Ajab Si &#10024;</p>
+            <div style="display:flex; gap:12px; justify-content:center; margin-top:20px; flex-wrap:wrap;">
+              <button onclick="stopBgAndPlaySong()" style="padding:10px 24px; border:none; background:var(--rose); color:white; border-radius:2px; cursor:pointer; font-family:'DM Sans',sans-serif; font-size:0.85rem;">
+                Stop current &amp; Listen 🎵
+              </button>
+              <button onclick="closeSongNotification()" style="padding:10px 24px; border:1px solid rgba(212,168,83,0.5); background:rgba(212,168,83,0.1); color:var(--gold-light); border-radius:2px; cursor:pointer; font-family:'DM Sans',sans-serif; font-size:0.85rem;">
+                Continue later ✨
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="song-block">
+          <div class="song-player-row">
+            <button id="songPlayBtn" onclick="toggleSong()">
+              <span id="songIcon">▶</span>
+            </button>
+            <div class="eq-bars" id="eqBars">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <span class="song-label">Ajab Si &nbsp;&#10024;</span>
+          </div>
+          
+          <audio id="songAudio" loop>
+            <source src="song3.mp3" type="audio/mpeg">
+          </audio>
+          <p style="margin-top:16px;">Tere saath saath aisa ✨<br>
+Koi noor aaya hai<br>
+Chaand teri roshni ka<br>
+Halka sa ik sayaa hai<br>
+Teri nazron ne dil ka kiya jo hashar<br>
+Asar ye hua ✨<br>
+Ab in mein hi doobke ho jaaun paar<br>
+Yehi hai dua..! ✨<br><br>
+<em>Aankhon mein teri<br>
+Ajab si, ajab si, adaayein hain~~</em></p>
+        </div>
+
+        <div class="letter-quote">
+          "It is the way people make you feel that you fall in love with. It has nothing to do with appearance. It is the warmth they radiate to you while you are with them. It is the way they make you feel safe and it is every little gesture they make for you that makes you love them over and over again."
+          <cite>— Muskan Kaur</cite>
+        </div>
+
+        <div class="letter-body">
+You are like the compass in my life who guides me through everything — through assignments, through tests, through exams, through life. A compass that never runs out of directions, of dedication. A compass that is never deprived of love — love of exploring, love of explaining, and the love of expecting.
+
+Please make sure to plant me into your heart like the rose I gave you. Make sure to water the ground properly where our love had first bloomed.
+
+I love the little moments we spent at the mall, the games we played at the arcade — but I'll make sure that I will never play games with your heart.
+
+We started with the sun, moon and stars and we wind it up with the land we live on. I hope we stay humble, like the little butterflies always picking on flowers. I hope the rose in your heart grows day by day with the shower of my love.
+
+I'll make sure that the flower never withers away, because I know it will bloom on the land of our love and will be cherished by the end of eternity.</div>
+
+        <div class="letter-sign">
+          <p>Love you to the farthest star and back 💫</p>
+          <small>forever & always</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINALE -->
+  <section id="finale">
+    <div class="finale-glow"></div>
+    <p class="finale-eyebrow reveal">Forever &amp; Always</p>
+    <h2 class="finale-title reveal">
+      I <em>❤</em> You
+    </h2>
+    <p class="finale-forever reveal">Now, tomorrow &nbsp;✦&nbsp; and every day after</p>
+    <p class="finale-roses reveal">🌹 &nbsp; 🌸 &nbsp; 🌹 &nbsp; 🌸 &nbsp; 🌹</p>
+  </section>
+
+</div><!-- /main-content -->
+
+<script src="script.js"></script>
+</body>
+</html>
